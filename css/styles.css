@@ -4,18 +4,262 @@
 
   --text-primary: #303030;
   --text-secondary: #9da4bd;
+  --text-primary-lighten: #555555;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  font-family: Open Sans;
+}
+.suptitle-secondory {
+  color: #9da4bd99;
+}
+.suptitle-primary,
+.suptitle-secondory {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primary);
+}
 h2.section-title {
   font-family: 'Raleway';
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 42px;
   color: var(--text-primary);
 }
 h2.section-title.lighten {
   color: #fff;
+}
+.hero-description {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wpap;
+}
+
+/* Navbar styles here */
+nav.navbar {
+  width: 100%;
+  outline: 2px solid skyblue;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 30px 55px 0 55px;
+  box-sizing: border-box;
+}
+nav.navbar .btn-box {
+  /* display: inline-block;
+  padding-top: 30px; */
+}
+.nav-holder {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+.logo-img {
+  width: 68px;
+  height: 56px;
+  margin: 0 32px;
+}
+.navbar {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+}
+.btn-box {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.primary-btn.darken {
+  color: var(--text-primary);
+}
+a.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.nav-links {
+  display: flex;
+}
+
+a.nav-link:hover,
+.social-link:hover {
+  color: var(--primary-color);
+}
+.primary-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+}
+.nav-links li {
+  margin: 0 40px;
+  outline: 1px solid tomato;
+}
+
+/* Main styles here  */
+
+.section-box {
+  width: 100%;
+  padding: 130px 55px;
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  color: var(--text-primary);
+}
+
+.about-section,
+.why-us_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_image-box {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+}
+.about_image-box img {
+  width: 48%;
+}
+
+.description-container {
+  width: 48%;
+}
+
+p.section-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-primary-lighten);
+}
+
+.slider {
+  width: calc(100% - 155px);
+  background-image: url(../images/Slider.jpg);
+}
+
+.sidebar {
+  width: 155px;
+  height: 100vh;
+  background-color: #fff;
+}
+
+/* Price styles */
+.price-box {
+  display: flex;
+}
+
+.price-list {
+  display: flex;
+}
+
+.price-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item p,
+.price-item span {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
+}
+
+/* Why us styles here */
+
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 48%;
+  padding: 0 100px;
+}
+
+.number-box p,
+.number-box span {
+  display: block;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  color: var(--text-primary);
+  text-align: center;
+}
+.number-box {
+  background: #f7f7f7;
+  width: 170px;
+  height: 132px;
+  width: 48%;
+  margin-top: 30px;
+}
+
+.number-box span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+/* Masters styles here*/
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 300px;
+}
+
+.master-card p {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--text-primary);
+}
+.master-card span {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Footer styles here  */
+
+.footer-contacts {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
 }
